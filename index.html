@@ -467,19 +467,16 @@ https://templatemo.com/tm-557-grad-school
         </div>
         <div class="col-md-6">
           <div id="map">
-            <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2338.7625851618313!2d68.78222836110145!3d38.56555780614676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b5d16911d30119%3A0x9b1889ed38057e07!2sQalam!5e0!3m2!1sru!2s!4v1612077706961!5m2!1sru!2s" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
+		  </div>
+		</div>
+	</div>
   </section>
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <p><i class="fa fa-copyright"></i> Copyright 2020 by Grad School  
-          
-           | Design: <a href="https://templatemo.com" rel="sponsored" target="_parent">TemplateMo</a></p>
+          <p><i class="fa fa-copyright"></i> Copyright <span id="year"></span> Qalam </p>
         </div>
       </div>
     </div>
@@ -516,6 +513,8 @@ https://templatemo.com/tm-557-grad-school
            		}
 			})
 		});
+
+		$("#year").html(new Date().getFullYear());
 
         var showSection = function showSection(section, isAnimate) {
           var
